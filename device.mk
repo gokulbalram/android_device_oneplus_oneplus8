@@ -38,8 +38,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Alert Slider
 PRODUCT_PACKAGES += \
-    TriStateHandler \
-    tri-state-key_daemon
+    KeyHandler \
+    tri-state-key-calibrate
 
 # Attestation
 PRODUCT_COPY_FILES += \
