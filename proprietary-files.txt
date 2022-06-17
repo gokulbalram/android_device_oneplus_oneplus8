@@ -1040,6 +1040,7 @@ vendor/etc/sensors/config/sns_gyro_cal.json|8ff1a93489446c3e0fe199af1fbb943fec11
 vendor/etc/sensors/config/sns_heart_rate.json|67edc0201c01d0808787eb1ea497dcdf277d7513
 vendor/etc/sensors/config/sns_mag_cal.json|6de4e4c5f54879ce56f821220719c4fb57d968e1
 vendor/etc/sensors/config/sns_mag_cal_legacy.json|8abf8b8632bf48bf49ecb4da451c75536f553458
+<<<<<<< HEAD
 vendor/etc/sensors/config/sns_multishake.json|e312d768b4495ce5e661caa779c947e61bad8709
 vendor/etc/sensors/config/sns_pedometer.json|d5e63de9da2ae017b5d5ae9d1f9f4b60ac0492e3
 vendor/etc/sensors/config/sns_rmd.json|add5cf3eed0064cde87b84d538a7c4d6efeaf41d
@@ -1148,6 +1149,19 @@ vendor/etc/sensors/proto/sns_ultra_violet.proto|60be3ed3b397385bd62e562b72f01fc7
 vendor/etc/sensors/proto/sns_wrist_tilt_gesture.proto|f35ad5c8ade4f36caa9a71dff2523ddaf2f2c7ed
 vendor/etc/sensors/hals.conf|bf3677cbfa5ce5735662e8c259cb027969f65c87
 vendor/etc/sensors/sns_reg_config|3c0a81d130fcbc79185a89600d937f22502a9ebb
+=======
+vendor/etc/sensors/config/sns_multishake.json|0eaf91c7ecef108039545b531af3d4702aa89f75
+vendor/etc/sensors/config/sns_pedometer.json|a692c29e9dfa1eae44e423c25d447c61e60cf026
+vendor/etc/sensors/config/sns_rmd.json|4523bad52bf1b9613d8a89938dbad6d8a52ba9f2
+vendor/etc/sensors/config/sns_rotv.json|22b41ce6e9b8c07073f06bc933381532e5503f57
+vendor/etc/sensors/config/sns_smd.json|9b58f8c44776c45cf94860cfe1077c2eaf758eb3
+vendor/etc/sensors/config/sns_tilt.json|2fd5e20746a80f957e7111d95a8418f2aa6c70c5
+vendor/etc/sensors/config/sns_tilt_sw_disabled.json|1993aad43c7fdab15b03388a3d5ffb1c4ad7108e
+vendor/etc/sensors/config/sns_tilt_sw_enabled.json|122eaf6ede0ea0bbfa9e6c083bdc6c8f6f825605
+vendor/etc/sensors/config/sns_tilt_to_wake.json|667b18162988656e46b0b67d4f1b3cc2fd855e3e
+vendor/etc/sensors/config/sns_wrist_pedo.json|3f6298f23c182c16585dbef20c419ce5353842b5
+vendor/etc/sensors/sns_reg_config|8e1e7175533177fe45b89c4ba572a861e262467f
+>>>>>>> fec1de5... oneplus9: Use HIDL HALs from hardware/oplus
 vendor/lib/rfsa/adsp/libsns_device_mode_skel.so|733a5b8861bb6eb1285bb8982992531c94800997
 vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so|c30bb30eecf968e02f72c055d3cc13a7f769644f
 vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so|733a5b8861bb6eb1285bb8982992531c94800997

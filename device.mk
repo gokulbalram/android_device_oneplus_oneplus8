@@ -54,14 +54,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Biometrics
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml \
-    vendor/pa/config/permissions/vendor.aospa.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.aospa.biometrics.fingerprint.inscreen.xml
+    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml 
 
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.2-service.oneplus8 \
-    vendor.aospa.biometrics.fingerprint.inscreen@1.0-service \
-    vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor \
-    vendor.oneplus.fingerprint.extension@1.0.vendor
+    android.hardware.biometrics.fingerprint@2.3-service.oplus
 
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.sys.fod.pos.x=453 \
@@ -134,9 +130,6 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Display
-PRODUCT_PACKAGES += \
-    vendor.oneplus.hardware.display@1.0.vendor
-
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.sf.native_mode=2 \
     ro.vendor.display.sensortype=2 \
@@ -216,7 +209,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    device/oneplus/oneplus8
+    device/oneplus/oneplus8 \
+    hardware/oplus
 
 # Netflix
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -273,7 +267,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-service.multihal \
-    libsensorndkbridge
+    libsensorndkbridge \
+    sensors.oplus
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.sensors.sync_request=true \
@@ -308,7 +303,7 @@ PRODUCT_COPY_FILES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service.oneplus8
+    vendor.qti.hardware.vibrator.service.oplus
 
 # WLAN
 PRODUCT_COPY_FILES += \
