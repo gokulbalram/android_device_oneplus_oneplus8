@@ -34,11 +34,12 @@ allow hal_fingerprint_default vendor_persist_fingerprint_file:file rw_file_perms
 # Allow binder communication with the performance HAL.
 binder_call(hal_fingerprint_default, vendor_hal_perf_default)
 
+# Allow binder communication with hal_display_default
+binder_call(hal_fingerprint_default, hal_display_default)
+typeattribute hal_fingerprint_default hal_display_client;
+
 # Allow the fingerprint service to retrieve vendor.fastrpc.*.
 get_prop(hal_fingerprint_default, vendor_adsprpc_prop)
 
 # Allow the fingerprint service to read files in vendor_sysfs_battery_supply.
 r_dir_file(hal_fingerprint_default, vendor_sysfs_battery_supply)
-
-# Allow the fingerprint service to set the calibration status.
-set_prop(hal_fingerprint_default, vendor_fingerprint_prop)
