@@ -13,6 +13,14 @@
      limitations under the License.
 -->
 <compatibility-matrix version="1.0" type="framework">
+    <hal format="hidl" optional="true">
+        <name>android.hardware.biometrics.fingerprint</name>
+        <version>2.3</version>
+        <interface>
+            <name>IBiometricsFingerprint</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <!-- Camera -->
     <hal format="hidl">
         <name>vendor.oneplus.hardware.CameraMDMHIDL</name>
